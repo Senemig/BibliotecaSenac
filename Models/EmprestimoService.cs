@@ -31,11 +31,35 @@ namespace Biblioteca.Models
             }
         }
 
-        public ICollection<Emprestimo> ListarTodos(FiltrosEmprestimos filtro)
+        public ICollection<Emprestimo> ListarTodos(FiltrosEmprestimos filtro = null)
         {
             using (BibliotecaContext bc = new BibliotecaContext())
             {
-                return bc.Emprestimos.Include(e => e.Livro).OrderByDescending(e => e.DataDevolucao).ToList();
+                IQueryable<Emprestimo> query;
+
+                if (filtro != null)
+                {
+                    switch (filtro.TipoFiltro)
+                    {
+                        case "Usuário":
+                            query = bc.Emprestimos.Where(e => e.NomeUsuario.ToLower().Contains(filtro.Filtro.ToLower()));
+                            break;
+
+                        case "Livro":
+                            query = bc.Emprestimos.Where(e => e.Livro.Titulo.ToLower().Contains(filtro.Filtro.ToLower()) || e.Livro.Autor.ToLower().Contains(filtro.Filtro.ToLower()));
+                            break;
+
+                        default:
+                            query = bc.Emprestimos;
+                            break;
+                    }
+                }
+                else
+                {
+                    query = bc.Emprestimos;
+                }
+
+                return query.Include(e => e.Livro).OrderByDescending(e => e.DataDevolucao).ToList();
             }
         }
 
