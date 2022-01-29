@@ -5,20 +5,20 @@
 
 @* <div class="row">
     <div class="col-md-12">
-        <form class="form-inline" asp-action="Listagem" method="POST">
-            <div class="form-group mb-2">
-                <select name="TipoFiltro" class="form-control">
-                    <option value="Autor">Autor</option>
-                    <option value="Titulo">Título</option>
-                </select>
-            </div>
-            <div class="form-group mb-2 mx-sm-3">
-                <input type="text" placeholder="Filtro" name="Filtro" class="form-control" />
-            </div>
-            <button type="submit" class="btn btn-primary mb-2">Pesquisar</button>
-        </form>
+    <form class="form-inline" asp-action="Listagem" method="POST">
+    <div class="form-group mb-2">
+    <select name="TipoFiltro" class="form-control">
+    <option value="Autor">Autor</option>
+    <option value="Titulo">Título</option>
+    </select>
     </div>
-</div> *@
+    <div class="form-group mb-2 mx-sm-3">
+    <input type="text" placeholder="Filtro" name="Filtro" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Pesquisar</button>
+    </form>
+    </div>
+    </div> *@
 
 <div class="row">
     <div class="col-md-12">
@@ -29,6 +29,7 @@
                     <th>Nome</th>
                     <th>Username</th>
                     <th>Senha</th>
+                    <th></th>
                     <th></th>
                 </tr>
             </thead>
@@ -43,7 +44,8 @@
                             <td>@u.Nome</td>
                             <td>@u.Username</td>
                             <td>@u.Senha</td>
-                            <td><a href="/Usuario/Edicao/@u.Id">Editar</a></td>
+                            <td><a class="font-weight-bold link-primary" href="/Usuario/Edicao/@u.Id">Editar</a></td>
+                            <td><a class="font-weight-bold text-danger" href="/Usuario/Remover/@u.Id">Excluir</a></td>
                         </tr>
                     }
                 </tbody>

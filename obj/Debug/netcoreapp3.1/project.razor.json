@@ -14457,6 +14457,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC08\\ATV01\\Biblioteca\\Views\\Usuario\\Remover.cshtml",
+      "TargetPath": "Views\\Usuario\\Remover.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC08\\ATV01\\Biblioteca\\Views\\Usuario\\Cadastro.cshtml",
       "TargetPath": "Views\\Usuario\\Cadastro.cshtml",
       "FileKind": "mvc"
