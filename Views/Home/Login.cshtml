@@ -1,3 +1,5 @@
+@model Usuario
+
 @{
     ViewData["Title"] = "Login";
 }
@@ -7,7 +9,7 @@
             <h1>Bem vindo ao sistema Biblioteca</h1>
             <form asp-action="Login" method="POST">
                 <div class="form-group">
-                    <input type="text" placeholder="Login" class="form-control" name="login" />
+                    <input type="text" placeholder="Login" class="form-control" name="username" />
                 </div>
                 <div class="form-group">
                     <input type="password" placeholder="Senha" class="form-control" name="senha"/>

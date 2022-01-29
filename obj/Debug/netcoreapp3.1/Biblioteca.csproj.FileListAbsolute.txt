@@ -102,3 +102,6 @@ C:\Users\ferna\Desktop\SENAC\Módulo 2\UC08\ATV01\Biblioteca\obj\Debug\netcoreap
 C:\Users\ferna\Desktop\SENAC\Módulo 2\UC08\ATV01\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.dll
 C:\Users\ferna\Desktop\SENAC\Módulo 2\UC08\ATV01\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.pdb
 C:\Users\ferna\Desktop\SENAC\Módulo 2\UC08\ATV01\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.genruntimeconfig.cache
+C:\Users\ferna\Desktop\SENAC\Módulo 2\UC08\ATV01\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Cadastro.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Módulo 2\UC08\ATV01\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Edicao.cshtml.g.cs
+C:\Users\ferna\Desktop\SENAC\Módulo 2\UC08\ATV01\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Listagem.cshtml.g.cs

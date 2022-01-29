@@ -1,0 +1,59 @@
+@model List<Usuario>
+@{
+    ViewData["Title"] = "Listagem de Livros";
+}
+
+@* <div class="row">
+    <div class="col-md-12">
+        <form class="form-inline" asp-action="Listagem" method="POST">
+            <div class="form-group mb-2">
+                <select name="TipoFiltro" class="form-control">
+                    <option value="Autor">Autor</option>
+                    <option value="Titulo">Título</option>
+                </select>
+            </div>
+            <div class="form-group mb-2 mx-sm-3">
+                <input type="text" placeholder="Filtro" name="Filtro" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Pesquisar</button>
+        </form>
+    </div>
+</div> *@
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Username</th>
+                    <th>Senha</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            @if (Model.Count > 0)
+            {
+                <tbody>
+                    @foreach (Usuario u in Model)
+                    {
+                        <tr>
+                            <td>@u.Id</td>
+                            <td>@u.Nome</td>
+                            <td>@u.Username</td>
+                            <td>@u.Senha</td>
+                            <td><a href="/Usuario/Edicao/@u.Id">Editar</a></td>
+                        </tr>
+                    }
+                </tbody>
+            }
+
+            else
+            {
+                <p class="text-danger">Nenhum usuário encontrado!</p>
+            }
+
+        </table>
+    </div>
+</div>

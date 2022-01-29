@@ -14422,6 +14422,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC08\\ATV01\\Biblioteca\\Views\\Usuario\\Listagem.cshtml",
+      "TargetPath": "Views\\Usuario\\Listagem.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC08\\ATV01\\Biblioteca\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
@@ -14452,6 +14457,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC08\\ATV01\\Biblioteca\\Views\\Usuario\\Cadastro.cshtml",
+      "TargetPath": "Views\\Usuario\\Cadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC08\\ATV01\\Biblioteca\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -14459,6 +14469,11 @@
     {
       "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC08\\ATV01\\Biblioteca\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC08\\ATV01\\Biblioteca\\Views\\Usuario\\Edicao.cshtml",
+      "TargetPath": "Views\\Usuario\\Edicao.cshtml",
       "FileKind": "mvc"
     },
     {
