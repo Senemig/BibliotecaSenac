@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Collections;
 using Biblioteca.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace Biblioteca.Controllers
 {
@@ -9,6 +10,7 @@ namespace Biblioteca.Controllers
     {
         public IActionResult Cadastro()
         {
+            Autenticacao.CheckLogin(this, HttpContext.Session.GetString("user"));
             return View();
         }
 
@@ -31,6 +33,7 @@ namespace Biblioteca.Controllers
 
         public IActionResult Listagem()
         {
+            Autenticacao.CheckLogin(this, HttpContext.Session.GetString("user"));
             UsuarioService usuarioService = new UsuarioService();
 
             return View(usuarioService.ListarTodos());
@@ -38,6 +41,7 @@ namespace Biblioteca.Controllers
 
         public IActionResult Edicao(int id)
         {
+            Autenticacao.CheckLogin(this, HttpContext.Session.GetString("user"));
             UsuarioService usuarioService = new UsuarioService();
             Usuario u = usuarioService.ObterPorId(id);
 
