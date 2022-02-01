@@ -13,7 +13,7 @@
                 <select asp-for="Emprestimo.NomeUsuario" class="form-control">
                     @foreach (Usuario u in Model.Usuarios)
                     {
-                        <option value="@u.Id">@u.Nome</option>
+                        <option value="@u.Nome">@u.Nome</option>
                     }
                 </select>
             </div>
