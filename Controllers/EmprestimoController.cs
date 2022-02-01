@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using System;
+using System.Linq;
 
 namespace Biblioteca.Controllers
 {
@@ -17,6 +18,12 @@ namespace Biblioteca.Controllers
 
             CadEmprestimoViewModel cadModel = new CadEmprestimoViewModel();
             cadModel.Livros = livroService.ListarDisponiveis();
+
+            using (BibliotecaContext bc = new BibliotecaContext())
+            {
+                cadModel.Usuarios = bc.Usuarios.Where(u => u.Username != "admin").ToList();
+            }
+
             return View(cadModel);
         }
 

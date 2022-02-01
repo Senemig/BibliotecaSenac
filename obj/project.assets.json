@@ -850,11 +850,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC08\\ATV01\\Biblioteca\\Biblioteca.csproj",
+      "projectUniqueName": "C:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC07\\ATV01\\Biblioteca\\Biblioteca.csproj",
       "projectName": "Biblioteca",
-      "projectPath": "C:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC08\\ATV01\\Biblioteca\\Biblioteca.csproj",
+      "projectPath": "C:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC07\\ATV01\\Biblioteca\\Biblioteca.csproj",
       "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC08\\ATV01\\Biblioteca\\obj\\",
+      "outputPath": "C:\\Users\\ferna\\Desktop\\SENAC\\Módulo 2\\UC07\\ATV01\\Biblioteca\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config"
