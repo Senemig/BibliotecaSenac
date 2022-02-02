@@ -3,6 +3,7 @@ using System.Collections;
 using Biblioteca.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
+using System.Linq;
 
 namespace Biblioteca.Controllers
 {
@@ -21,7 +22,19 @@ namespace Biblioteca.Controllers
 
             if (u.Id == 0)
             {
-                usuarioService.Inserir(u);
+                using (BibliotecaContext bc = new BibliotecaContext())
+                {
+                    if (bc.Usuarios.Where(user => user.Username == u.Username) == null)
+                    {
+                        usuarioService.Inserir(u);
+                    }
+                    else
+                    {
+                        ViewData["Erro"] = "Nome de usuário já em uso!";
+                        return View();
+                    }
+                }
+
             }
             else
             {
