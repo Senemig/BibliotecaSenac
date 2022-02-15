@@ -14,11 +14,10 @@ namespace Biblioteca.Controllers
         {
             Autenticacao.CheckLogin(this);
             LivroService livroService = new LivroService();
-            EmprestimoService emprestimoService = new EmprestimoService();
 
             CadEmprestimoViewModel cadModel = new CadEmprestimoViewModel();
             cadModel.Livros = livroService.ListarDisponiveis();
-
+                    
             using (BibliotecaContext bc = new BibliotecaContext())
             {
                 cadModel.Usuarios = bc.Usuarios.Where(u => u.Username != "admin").ToList();

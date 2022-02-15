@@ -24,7 +24,7 @@ namespace Biblioteca.Controllers
             {
                 using (BibliotecaContext bc = new BibliotecaContext())
                 {
-                    if (bc.Usuarios.Where(user => user.Username == u.Username) == null)
+                    if (bc.Usuarios.Where(user => user.Username == u.Username).Count() == 0)
                     {
                         usuarioService.Inserir(u);
                     }
